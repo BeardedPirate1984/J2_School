@@ -11,5 +11,7 @@ public class Main {
         System.out.println(uczen1);
         Wychowawca wychowawca1P = new Wychowawca("Zygmund","wf");
         System.out.println(wychowawca1P);
+        uczen1.wykonaDyzur();
+        wychowawca1P.wykonaDyzur();
     }
 }

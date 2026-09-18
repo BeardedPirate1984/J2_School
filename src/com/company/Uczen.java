@@ -1,6 +1,6 @@
 package com.company;
 
-public class Uczen extends Osoba{
+public class Uczen extends Osoba implements Dyzurny{
     private static int liczbaUCzniow = 0;
     private int nrUcznia;
 
@@ -17,5 +17,10 @@ public class Uczen extends Osoba{
                 " wiek = "+getWiek()+
                 ", nrUcznia=" + nrUcznia +
                 '}';
+    }
+
+    @Override
+    public void wykonaDyzur() {
+        System.out.println("Podlej kwiatki");
     }
 }

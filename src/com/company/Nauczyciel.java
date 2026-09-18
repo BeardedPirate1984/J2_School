@@ -1,6 +1,6 @@
 package com.company;
 
-public class Nauczyciel extends Osoba{
+public class Nauczyciel extends Osoba implements Dyzurny{
     private String przedmiot;
 
     public Nauczyciel(String imie,String przedmiocik) {
@@ -14,5 +14,10 @@ public class Nauczyciel extends Osoba{
                 "przedmiot='" + przedmiot + '\'' +
                 ", imie='" + imie + '\'' +
                 '}';
+    }
+
+    @Override
+    public void wykonaDyzur() {
+        System.out.println("Spacer po korytarzu");
     }
 }
