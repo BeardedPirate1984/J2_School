@@ -9,5 +9,7 @@ public class Main {
         Uczen uczen1 = new Uczen("Ala",7);
         System.out.println(uczen);
         System.out.println(uczen1);
+        Wychowawca wychowawca1P = new Wychowawca("Zygmund","wf");
+        System.out.println(wychowawca1P);
     }
 }
