@@ -25,6 +25,12 @@ public class Klasa {
         return true;
     }
 
+    public void usunUczniaZKlasy(Uczen uczen){
+        if (uczniowie.contains(uczen)){
+            uczniowie.remove(uczen);
+        }
+    }
+
     @Override
     public String toString() {
         return "Klasa{" +
@@ -41,5 +47,9 @@ public class Klasa {
         for (int i = 0; i < uczniowie.size(); i++) {
             System.out.println("Uczen "+i+": "+uczniowie.get(i));
         }
+    }
+
+    public ArrayList<Uczen> getUczniowie() {
+        return uczniowie;
     }
 }
